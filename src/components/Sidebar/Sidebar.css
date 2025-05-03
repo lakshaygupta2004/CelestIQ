@@ -1,0 +1,168 @@
+.sidebar {
+    min-height: 100svh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/006/688/262/non_2x/triangle-geometric-black-3d-background-dark-mosaic-geometry-pattern-polygon-shape-pattern-backdrop-triangular-creative-template-abstract-modern-wallpaper-design-illustration-vector.jpg");
+    padding: 25px 15px;
+    transition: width 0.15s ease, padding 0.3s ease;
+    z-index: 999;
+    user-select: none;
+    box-shadow: #FF007F 0 -1px 30px;
+}
+
+@media (max-width: 800px) {
+    .sidebar {
+        position: fixed;
+    }
+}
+
+.sidebar.extended {
+    width: 250px;
+}
+
+.sidebar.collapsed {
+    width: 80px;
+}
+
+.sidebar img {
+    width: 20px;
+}
+
+.menu {
+    width: 50px;
+    height: 50px;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    border-radius: 100svh;
+    background-color: #008B8B;
+}
+
+.menu:hover {
+    background-color: #3A506B;
+}
+
+.top, .bottom {
+    display: grid;
+    gap: 0.5rem;
+    -ms-flex-line-pack: start;
+    align-content: start;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.sidebar .new-chat {
+    margin-top: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: #000;
+    border-radius: 50px;
+    font-size: 14px;
+    color: #FFF;
+    cursor: pointer;
+    box-shadow: #FF007F 0 -1px 20px;
+}
+
+.sidebar .new-chat img {
+    color: black;
+
+}
+
+.new-chat:hover {
+    background-color: #3A506B;
+}
+
+.new-chat {
+    justify-content: center;
+    width: max-content;
+}
+
+.sidebar .recent-title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.sidebar .recent-entry {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 100vh;
+    color: #000;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: #008B8B;
+}
+
+.sidebar .recent-entry:hover {
+    background-color: #3A506B;
+}
+
+.fade {
+    transition: opacity 1s ease;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+.none {
+    display: none;
+    opacity: 0;
+    animation: fadeOut 1s forwards;
+}
+
+.block {
+    display: block;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    white-space: nowrap;
+}
+
+.centered {
+    display: -ms-grid;
+    display: grid;
+    align-items: center;
+    justify-content: start;
+}
+
+.recent {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.recent-entry-p {
+    white-space: nowrap;
+    overflow: hidden;
+}
