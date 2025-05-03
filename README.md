@@ -42,7 +42,7 @@ CelestIQ - Intelligence beyond the Horizon is a web application built using Reac
 1. Navigate to the project directory:
 
    ```bash
-   cd Gemini-Clone
+   cd CelestIQ - Intelligence beyond the Horizon
    ```
 
 2. Install dependencies:
