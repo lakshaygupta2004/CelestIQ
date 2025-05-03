@@ -2,7 +2,10 @@ CelestIQ - Intelligence beyond the Horizon is a React-based project designed to 
 
 The application aims to provide a seamless and engaging conversational experience by integrating the Google Gemini API into its core functionalities. It allows users to engage in meaningful discussions on various topics while benefiting from the cutting-edge technology behind Google Gemini.
 
+
 <img src="./src/assets/CelestIQ_4K.png" alt="CelestIQ Logo" width="60%" height="auto"/>
+
+Vercel: https://celest-iq.vercel.app/
 
 ## Table of Contents
 
